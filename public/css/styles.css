@@ -82,6 +82,9 @@
                 margin: 10px;
                 background-color: white;
             }
+            .artic:hover{
+                box-shadow: 0px 0px 10px 0px rgba(100,100,100,0.75);
+            }
                 main p{
                     font-size: 12px;
                 }
@@ -131,11 +134,74 @@
         .footer{
             text-align: center;
         }
-            .footer i{
-                color: #1259c3;
-                font-size: 2em;
-                margin-top: 10px;
+            .copyright{
+                margin: 5px;
             }
+                .footer i{
+                    color: #1259c3;
+                    font-size: 2em;
+                    margin-top: 10px;
+                }
+
+
+
+/*REGISTER*/
+form{
+    margin: 0 15px;
+    padding: 15px 20%;
+}
+    .create-form{
+        padding: 20px 15px;
+        margin-top: 240px;
+    }
+        .control-form{
+            margin-bottom: 15px;
+        }
+            #comp, #vend{
+                width: 5%;
+            }
+            .control-form label{
+                margin-bottom: 5px;
+                font-style: italic;
+                display: block;
+            }
+            .control{
+                width: 100%;
+                padding: 8px;
+            }
+    .form-button{
+        background-color: #1259c3;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    /*LOGIN*/
+    .login-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .login-form input{
+            margin: 15px 0;
+            padding: 7px;
+            font-size: 15px;
+        }
+        .login-form button{
+            background-color: #1259c3;
+            border: none;
+            font-size: 20px;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 50%;
+        }
+        .login-form button:hover{
+            background-color: #0022AA;
+        }
 @media(min-width: 361px){
     #comp, #vend{
         width: 30%;
@@ -163,7 +229,6 @@
         justify-content: space-around;
     }
     .artic{
-        box-shadow: 0px 0px 10px 0px rgba(100,100,100,0.75);
         width: 40%;
     }
     #descripciones{
@@ -176,6 +241,9 @@
     }
     .burger-button{
         display: none;
+    }
+    .login-form button{
+        width: 20%;
     }
 }
 @media(min-width: 1200px){
@@ -190,37 +258,28 @@
     .artic{
         max-width: 20%;
     }
-}
-
-/*REGISTER*/
-form{
-    margin: 0 15px;
-    padding: 15px 20%;
-}
-    .create-form{
-        padding: 20px 15px;
-        margin-top: 240px;
+    #descripciones{
+        display: none;
     }
-        .control-form{
-            margin-bottom: 15px;
-        }
-            #comp, #vend{
-                width: 5%;
-            }
-            .control-form label{
-                margin-bottom: 5px;
-                font-style: italic;
-                display: block;
-            }
-            .control{
-                width: 100%;
-                padding: 8px;
-            }
-    .form-button{
-        background-color: #39b54a;
-        border: none;
-        font-size: 20px;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
+    .artic:hover #descripciones{
+        display: block;
     }
+    .login-form input{
+        width: 100%;
+    }
+    .login-form button{
+        width: 12%;
+    }
+    .footer-info{
+        max-width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer{
+        text-align: center;
+        margin: 20px 0;
+    }
+}
