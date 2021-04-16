@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <form action="/" method="POST" class="register-form">
+            <div class="control-form">
+                <label for="">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Ingrese su Nombre" id="" class="control" minlength="4" required>
+            </div>
+            <div class="control-form">
+                <label for="">Apellido: </label>
+                <input type="text" name="apellido" placeholder="Ingrese su Apellido" id="" class="control" minlength="4" required>
+            </div>
+            <div class="control-form">
+                <label for="">Fecha de Nacimiento: </label>
+                <input type="date" name="fecha" id="" class="control" required>
+            </div>
+            <div class="control-form">
+                <label for="">Domicilio: </label>
+                <input type="text" name="domicilio" id="" class="control" required>
+            </div>
+            <div class="control-form">
+                <label for="">Perfil de Usuario: </label>
+                <input type="radio" name="perfil" value="Comprador" id="comp" class="control"> Comprador<br>
+                <input type="radio" name="perfil" value="Vendedor" id="vend" class="control"> Vendedor
+            </div>
+            <div class="control-form">
+                <label for="">Categorías de Interés: </label>
+                <select name="categoria" id="" class="control">
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="jugueteria">Juguetería</option>
+                    <option value="vidaSana">Vida Sana</option>
+                </select>
+            </div>
+            <div class="control-form">
+                <label for="">Seleccione una imágen de Perfil: </label>
+                <input type="file" name="foto-perfil" id="" class="control">
+            </div>
+            <div class="control-form">
+                <label for="">Ingrese Contraseña: </label>
+                <input type="password" name="foto-perfil" id="" class="control" minlength="7" required>
+            </div>
+            <div class="control-form">
+                <label for="">Confirme Contraseña: </label>
+                <input type="password" name="foto-perfil" id="" class="control" minlength="7" required>
+            </div>
+            <button type="submit" value="enviar" class="form-button">Enviar</button>
+            <button type="reset" value="borrar" class="form-button">Borrar</button>
+        </form>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
